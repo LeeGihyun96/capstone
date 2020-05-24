@@ -1,29 +1,166 @@
 fileFormatVersion: 2
 guid: 493867b7250a8584aa27d8781bc3fc85
 ModelImporter:
-  serializedVersion: 19300
-  internalIDToNameTable:
-  - first:
-      74: 4723146814002874508
-    second: Armature|Attack
-  - first:
-      74: -8945691123924629249
-    second: Armature|Idle
-  - first:
-      74: 1079665108409675491
-    second: Armature|Jump
-  - first:
-      74: -3828583913261678786
-    second: Armature|Running
-  - first:
-      74: -273944147360222477
-    second: Armature|stun
-  - first:
-      74: 8349542763059015795
-    second: Armature|Walk
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Body
+    100004: Camera
+    100006: Cathcer
+    100008: Cathcer_end
+    100010: Center
+    100012: Clavicle.L
+    100014: Clavicle.R
+    100016: Hat
+    100018: Hat_end
+    100020: Head
+    100022: L.Arm
+    100024: L.Foot
+    100026: L.Foot_end
+    100028: L.Hand
+    100030: L.Hand_end
+    100032: L.Knee
+    100034: L.Leg
+    100036: L.Pelvis
+    100038: L.Shoulder
+    100040: Lamp
+    100042: //RootNode
+    100044: MainChar
+    100046: MainChar.001
+    100048: MainChar.002
+    100050: MainChar.003
+    100052: MainChar.004
+    100054: MainChar.005
+    100056: MainChar.006
+    100058: MainChar.007
+    100060: MainChar.008
+    100062: MainChar.009
+    100064: MainChar.010
+    100066: MainChar.011
+    100068: MainChar.012
+    100070: MainChar.013
+    100072: MainChar.014
+    100074: MainChar.015
+    100076: MainChar.016
+    100078: R.Arm
+    100080: R.Foot
+    100082: R.Foot_end
+    100084: R.Hand
+    100086: R.Knee
+    100088: R.Leg
+    100090: R.Pelvis
+    100092: R.Shoulder
+    400000: Armature
+    400002: Body
+    400004: Camera
+    400006: Cathcer
+    400008: Cathcer_end
+    400010: Center
+    400012: Clavicle.L
+    400014: Clavicle.R
+    400016: Hat
+    400018: Hat_end
+    400020: Head
+    400022: L.Arm
+    400024: L.Foot
+    400026: L.Foot_end
+    400028: L.Hand
+    400030: L.Hand_end
+    400032: L.Knee
+    400034: L.Leg
+    400036: L.Pelvis
+    400038: L.Shoulder
+    400040: Lamp
+    400042: //RootNode
+    400044: MainChar
+    400046: MainChar.001
+    400048: MainChar.002
+    400050: MainChar.003
+    400052: MainChar.004
+    400054: MainChar.005
+    400056: MainChar.006
+    400058: MainChar.007
+    400060: MainChar.008
+    400062: MainChar.009
+    400064: MainChar.010
+    400066: MainChar.011
+    400068: MainChar.012
+    400070: MainChar.013
+    400072: MainChar.014
+    400074: MainChar.015
+    400076: MainChar.016
+    400078: R.Arm
+    400080: R.Foot
+    400082: R.Foot_end
+    400084: R.Hand
+    400086: R.Knee
+    400088: R.Leg
+    400090: R.Pelvis
+    400092: R.Shoulder
+    2000000: Camera
+    2100000: palette.001
+    2300000: MainChar
+    2300002: MainChar.001
+    2300004: MainChar.002
+    2300006: MainChar.003
+    2300008: MainChar.004
+    2300010: MainChar.005
+    2300012: MainChar.006
+    2300014: MainChar.007
+    2300016: MainChar.008
+    2300018: MainChar.009
+    2300020: MainChar.010
+    2300022: MainChar.011
+    2300024: MainChar.012
+    2300026: MainChar.013
+    2300028: MainChar.014
+    2300030: MainChar.015
+    2300032: MainChar.016
+    3300000: MainChar
+    3300002: MainChar.001
+    3300004: MainChar.002
+    3300006: MainChar.003
+    3300008: MainChar.004
+    3300010: MainChar.005
+    3300012: MainChar.006
+    3300014: MainChar.007
+    3300016: MainChar.008
+    3300018: MainChar.009
+    3300020: MainChar.010
+    3300022: MainChar.011
+    3300024: MainChar.012
+    3300026: MainChar.013
+    3300028: MainChar.014
+    3300030: MainChar.015
+    3300032: MainChar.016
+    4300000: MainChar.003
+    4300002: MainChar.016
+    4300004: MainChar.002
+    4300006: MainChar.001
+    4300008: MainChar.013
+    4300010: MainChar.014
+    4300012: MainChar.015
+    4300014: MainChar.007
+    4300016: MainChar.004
+    4300018: MainChar.005
+    4300020: MainChar
+    4300022: MainChar.008
+    4300024: MainChar.012
+    4300026: MainChar.011
+    4300028: MainChar.010
+    4300030: MainChar.009
+    4300032: MainChar.006
+    7400000: Armature|Attack
+    7400002: Armature|Idle
+    7400004: Armature|Jump
+    7400006: Armature|Running
+    7400008: Armature|stun
+    7400010: Armature|Walk
+    9500000: //RootNode
+    10800000: Lamp
   externalObjects: {}
   materials:
-    materialImportMode: 1
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -56,7 +193,6 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -64,19 +200,18 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -85,10 +220,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
   importAnimation: 1
+  copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -98,16 +233,13 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

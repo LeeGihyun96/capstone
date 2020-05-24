@@ -7,6 +7,8 @@ public class PlayerCtrl : MonoBehaviour
 
     public float speed = 3.0f;
 
+    public bool isGround;
+
     private Vector3 movement;
 
     private Animator anim;
@@ -16,6 +18,8 @@ public class PlayerCtrl : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         modelRigidbody = GetComponent<Rigidbody>();
+
+        isGround = true;
     }
 
     private void FixedUpdate()
@@ -27,7 +31,9 @@ public class PlayerCtrl : MonoBehaviour
         
         Move();
         
-        Attack(); 
+        Attack();
+
+        Jump();
     }
 
     private void Move()
@@ -52,6 +58,31 @@ public class PlayerCtrl : MonoBehaviour
         else
         {
             anim.SetBool("isAttack", false);
+        }
+    }
+
+    private void Jump()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (isGround)
+            {
+                anim.SetBool("isJump", true);
+                modelRigidbody.AddForce(Vector3.up * 8f, ForceMode.Impulse);
+                isGround = false;
+            }
+        }
+        else
+        {
+            anim.SetBool("isJump", false);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            isGround = true;
         }
     }
 }
